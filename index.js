@@ -13,7 +13,7 @@ const calculateMPH = () => {
 }
 
 const calculateMinutesPerMile = () => {
-    const rawMPH = 60 / parseInt(mph.value)|| 0;
+    const rawMPH = 60 / parseFloat(mph.value)|| 0;
     const fixedMPH = rawMPH.toFixed(2);
     const calculatedMinutes = Math.floor(fixedMPH);
     const calculatedSeconds = Math.round((fixedMPH - calculatedMinutes) * 60);
